@@ -20,8 +20,18 @@
 
     header {
       background: #1e293b;
-      padding: 20px;
+      padding: 40px 20px; /* Ditambah padding agar lebih lega */
       text-align: center;
+    }
+
+    /* Style untuk foto profil */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; /* Membuat gambar jadi bulat */
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 15px;
     }
 
     header h1 {
@@ -72,6 +82,8 @@
 <body>
 
   <header>
+    <img src="WIN_20260210_14_13_26_Pro.jpg" alt="Foto Faisal" class="profile-img">
+    
     <h1>Faisal Portfolio</h1>
     <p>Web Developer | Pelajar</p>
     <nav>
@@ -84,7 +96,7 @@
   <section id="about">
     <h2>Tentang Saya</h2>
     <div class="card">
-      <p>Halo! Saya Faisal, seorang pelajar di SMP BQ Islamic School</p>
+      <p>Halo! Saya Faisal, seorang pelajar di SMP BQ Islamic School yang tertarik dengan dunia pengembangan web dan desain.</p>
     </div>
   </section>
 
@@ -92,24 +104,20 @@
     <h2>Project Saya</h2>
     
     <div class="card">
-      <h3>Website Sekolah</h3>
-      <img src="Screenshot (59).png" alt="Contoh Gambar" width="300" >
-      <a href="https://faisalfarhan123.github.io/JadwalShalat9B/">Click untuk melihat</a>
-      <p>Membuat website jadwal shalat dengan menggunakan API.</p>
+      <h3>Website Jadwal Shalat</h3>
+      <img src="Screenshot (59).png" alt="Preview Jadwal Shalat" width="300" style="border-radius: 8px; margin: 10px 0;">
+      <br>
+      <a href="https://faisalfarhan123.github.io/JadwalShalat9B/" class="btn">Click untuk melihat</a>
+      <p style="margin-top: 10px;">Membuat website jadwal shalat otomatis dengan mengintegrasikan API eksternal.</p>
     </div>
-
-    <!-- <div class="card">
-      <h3>Aplikasi Kalkulator</h3>
-      <p>Aplikasi kalkulator sederhana menggunakan JavaScript.</p>
-    </div> -->
 
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <div class="card">
-      <p>Email: faisal@email.com</p>
-      <p>Instagram: @m.faisal farhan</p>
+      <p>📧 Email: faisal@email.com</p>
+      <p>📸 Instagram: @m.faisal_farhan</p>
     </div>
   </section>
 
